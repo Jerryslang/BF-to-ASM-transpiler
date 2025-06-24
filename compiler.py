@@ -73,10 +73,10 @@ out_file = 'out'
 start_time = time.time()
 asm_code = transpile(open(brainfuck_file).read())
 
-with open('out.asm', 'w') as f:
+with open(f'{out_file}.asm', 'w') as f:
     f.write(asm_code)
 
-print("Assembly code written to out.asm")
+print(f"Assembly code written to {out_file}.asm")
 compile(f'{out_file}.asm', f'{out_file}.o', out_file)
 
 end_time = time.time()
