@@ -1,2 +1,12 @@
 # BF-to-ASM-transpiler
-a transpiler that also uses nasm to create x86_64 asm binary's from brainfuck code
+
+this program transpiles brainfuck into x86_64 assembly then compiles it using nasm
+
+## Requirements
+
+. nasm
+
+. python
+
+. make
+
